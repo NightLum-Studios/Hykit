@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hykit"
+version = "0.1.0"
+description = "Cross-platform CLI tool for scaffolding Hytale project templates."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "(NSL) v3.0" }
+authors = [{ name = "Hykit Authors" }]
+keywords = ["cli", "scaffold", "hytale", "template"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+    "Environment :: Console",
+    "Topic :: Software Development :: Code Generators",
+]
+
+[project.scripts]
+hykit = "hykit.cli:main"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["hykit*"]
+
+[tool.setuptools.package-data]
+hykit = ["templates/**"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

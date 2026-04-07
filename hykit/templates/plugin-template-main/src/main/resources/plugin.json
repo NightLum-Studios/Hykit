@@ -1,0 +1,6 @@
+{
+  "name": "{PROJECT_NAME}",
+  "id": "{PROJECT_NAME_SNAKE}",
+  "mainClass": "dev.{PROJECT_NAME_SNAKE}.plugin.{PROJECT_NAME_PASCAL}Plugin",
+  "version": "0.1.0"
+}
