@@ -6,12 +6,6 @@
 
 <h3 align="center">Hykit</h3>
 
-Lightweight CLI for scaffolding Hytale projects.
-
-Designed to get you from idea → working structure in seconds, without boilerplate and manual setup.
-
----
-
 > [!NOTE]
 > This project is currently in active development. Expect changes, improvements, and occasional breaking updates.
 
