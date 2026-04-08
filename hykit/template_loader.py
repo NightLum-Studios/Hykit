@@ -4,10 +4,6 @@ import os
 from pathlib import Path
 import importlib.resources as resources
 
-
-FALLBACK_TEMPLATE_PATH = Path(r"C:\Users\Landar Hykit\plugin-template-main")
-
-
 def _package_template_path() -> Path | None:
     try:
         templates_root = resources.files("hykit.templates")
@@ -30,9 +26,4 @@ def find_template_path() -> Path:
         if path.is_dir():
             return path
 
-    if FALLBACK_TEMPLATE_PATH.is_dir():
-        return FALLBACK_TEMPLATE_PATH
-
-    raise FileNotFoundError(
-        "Template not found. Provide HYKIT_TEMPLATE_PATH or include a packaged template."
-    )
+    raise FileNotFoundError("Template not found. Provide HYKIT_TEMPLATE_PATH or include a packaged template.")

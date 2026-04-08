@@ -21,6 +21,7 @@ TEXT_EXTENSIONS = {
     ".ts",
     ".js",
     ".gradle",
+    ".kts",
     ".properties",
     ".java",
     ".kt",

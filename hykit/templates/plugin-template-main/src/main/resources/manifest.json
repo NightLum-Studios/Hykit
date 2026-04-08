@@ -1,0 +1,20 @@
+﻿{
+  "Group": "{PROJECT_AUTHOR}",
+  "Name": "{PROJECT_NAME}",
+  "Version": "1.0.0",
+  "Description": "",
+  "Authors": [
+    {
+      "Name": "{PROJECT_AUTHOR}",
+      "Email": "",
+      "Url": ""
+    }
+  ],
+  "Website": "",
+  "DisabledByDefault": false,
+  "IncludesAssetPack": false,
+  "Dependencies": {},
+  "OptionalDependencies": {},
+  "ServerVersion": "*",
+  "Main": "dev.{PROJECT_NAME_SNAKE}.ExamplePlugin"
+}
